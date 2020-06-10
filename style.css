@@ -1,0 +1,52 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+button{
+  margin-top:20px;
+  padding:5px;
+}
+
+.mainsquare{
+  position:relative;
+  width:525px;
+  height:525px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.square{
+  width:58px;
+  height:58px;
+  border:1px solid black;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.square input{
+  text-align:center;
+  border:0px;
+  width:50px;
+  height:50px;
+  font-weight:700;
+}
+
+.square:nth-child(9n+3), .square:nth-child(9n+6){
+  border-right:3px solid black;
+}
+
+.square:nth-child(n+19):not(:nth-child(n+28)), .square:nth-child(n+46):not(:nth-child(n+55)){
+  border-bottom:3px solid black;
+}
+
